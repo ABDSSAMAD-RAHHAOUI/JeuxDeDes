@@ -1,28 +1,32 @@
 package com.example.jeuxdedes.model;
 
-import java.util.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
-/**
- * 
- */
 public class De {
 
-    /**
-     * Default constructor
-     */
-    public De() {
-    }
-
-    /**
-     * 
-     */
     private Integer valeur;
+    private Image image;
 
-    /**
-     * 
-     */
-    public Integer getValeur() {
-        return 0;
+    public De(Integer valeur, Image image) {
+        this.valeur = valeur;
+        this.image = image;
+
     }
 
+    public Integer getValeur() {
+        return valeur;
+    }
+
+    public void setValeur(Integer valeur) {
+        this.valeur = valeur;
+    }
+
+    public Image getImage() {
+        return image;
+    }
+
+    public void setImage(Image image) {
+        this.image = image;
+    }
 }
