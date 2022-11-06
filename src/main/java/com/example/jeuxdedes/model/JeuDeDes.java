@@ -28,7 +28,7 @@ public class JeuDeDes {
 
     public void lancer() {
 
-        String imagesPath = "C:\\Users\\hp\\OneDrive\\Bureau\\School\\demo\\JeuxDeDes\\src\\main\\resources\\com\\example\\jeuxdedes\\assets\\";
+        String imagesPath = "C:\\Users\\21269\\IdeaProjects\\JeuxDeDes\\src\\main\\resources\\com\\example\\jeuxdedes\\assets/";
 
         final int NUM_FRAMES = 50;
         final int PAUSE_BETWEEN_FRAMES = 300;
@@ -52,9 +52,9 @@ public class JeuDeDes {
                             new KeyValue(this.mainController.de2Image.imageProperty(), images.get(r2))
                     )
             );
-            de1.setValeur(r1);
+            de1.setValeur(r1+1);
             de1.setImage(images.get(r1));
-            de2.setValeur(r2);
+            de2.setValeur(r2+1);
             de2.setImage(images.get(r2));
 
         }
