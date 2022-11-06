@@ -42,14 +42,12 @@ public class MainController implements Initializable {
 
     @FXML
     public void onStopButtonClick() {
+        this.jeuDeDes.getTimeline().stop();
         de1Image.setImage(this.jeuDeDes.getDe1().getImage());
         de2Image.setImage(this.jeuDeDes.getDe2().getImage());
-        welcomeText.setText("");
         stop.setDisable(true);
         jouer.setDisable(false);
         welcomeText.setVisible(true);
-        timeline1.stop();
-        this.jeuDeDes.getTimeline().stop();
         welcomeText.setText(this.jeuDeDes.getResultat() ? "Gagner :)" : "Perdu :(");
     }
 

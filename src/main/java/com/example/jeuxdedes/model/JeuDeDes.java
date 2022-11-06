@@ -45,6 +45,10 @@ public class JeuDeDes {
             Random random = new Random();
             int r1 = random.nextInt(6);
             int r2 = random.nextInt(6);
+            de1.setValeur(r1);
+            de1.setImage(images.get(r1));
+            de2.setValeur(r2);
+            de2.setImage(images.get(r2));
             timeline.getKeyFrames().add(
                     new KeyFrame(
                             Duration.millis(i * PAUSE_BETWEEN_FRAMES),
@@ -52,10 +56,6 @@ public class JeuDeDes {
                             new KeyValue(this.mainController.de2Image.imageProperty(), images.get(r2))
                     )
             );
-            de1.setValeur(r1);
-            de1.setImage(images.get(r1));
-            de2.setValeur(r2);
-            de2.setImage(images.get(r2));
 
         }
 
