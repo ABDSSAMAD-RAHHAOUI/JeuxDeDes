@@ -44,6 +44,8 @@ public class MainController implements Initializable {
     public void onStopButtonClick() {
         de1Image.setImage(this.jeuDeDes.getDe1().getImage());
         de2Image.setImage(this.jeuDeDes.getDe2().getImage());
+        System.out.println(this.jeuDeDes.getDe1().getValeur());
+        System.out.println(this.jeuDeDes.getDe2().getValeur());
         welcomeText.setText("");
         stop.setDisable(true);
         jouer.setDisable(false);
