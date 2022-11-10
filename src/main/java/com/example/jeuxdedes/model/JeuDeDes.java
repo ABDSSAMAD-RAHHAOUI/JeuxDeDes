@@ -18,6 +18,7 @@ public class JeuDeDes {
     private final De de2;
     private final Timeline timeline;
     private final MainController mainController;
+    private MainController mainController1;
 
     public JeuDeDes(MainController mainController,Timeline timeline, De de1, De de2) {
         this.mainController = mainController;
@@ -27,8 +28,7 @@ public class JeuDeDes {
     }
 
     public void lancer() {
-
-        String imagesPath = "C:\\Users\\21269\\IdeaProjects\\JeuxDeDes\\src\\main\\resources\\com\\example\\jeuxdedes\\assets/";
+        String imagesPath = "C:\\Users\\hp\\OneDrive\\Bureau\\School\\demo\\JeuxDeDes\\src\\main\\resources\\com\\example\\jeuxdedes\\assets\\";
 
         final int NUM_FRAMES = 50;
         final int PAUSE_BETWEEN_FRAMES = 300;

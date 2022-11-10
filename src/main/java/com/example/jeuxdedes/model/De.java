@@ -9,6 +9,10 @@ public class De {
     private Integer valeur;
     private Image image;
 
+    public De(){
+
+    }
+
     public De(Integer valeur) {
         this.valeur = valeur;
     }
